@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Human Activity Recognition</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+  body {background-color: powderblue;}
+  h1   {color: blue;}
+  p    {color: red;}
+  input{padding: inherit;
+  color: blue;
+  background-color:#B0C4DE;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    padding: 7px;
+
+}
+/* #prediction {
+  display: none;
+}
+
+#prediction.visible {
+  display: block;
+} */
+</style>
+  <h1>It can predict following 6 labels: Walking, Standing,Waving Hands, Talking to phone, Squatting,Yoga</h1>
+  <form  method="post">
+  {% csrf_token%}
+  <h1>Choose the video file to recognise:</h1>
+  <input type="file" name="file" id="fileItem" onchange="onChange()" >
+    <!-- <input type="submit" value="Play"> -->
+  <video width="450" ></video >
+
+</form>
+
+
+<form action="{% url 'index1'%}" >
+  <br><br>
+ <input  id="button" type="submit" value="Predict">
+</form>
+<div id="prediction">
+  <h1>Prediction is: {{text}}</h1>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+  var div = document.getElementById('prediction');
+  var URL = window.URL || window.webkitURL;
+var video = document.getElementsByTagName('video')[0];
+// var sub=document.getElementById('button')
+// sub.onclick = function() {
+//   if (pred.style.display === "none") {
+//     pred.style.display = "block";
+//
+//   } else {
+//     pred.style.display = "none";
+//   }
+// }
+
+function onChange() {
+    var fileItem = document.getElementById('fileItem');
+
+    var files = fileItem.files;
+    var file = files[0];
+    var url = URL.createObjectURL(file);
+    // console.log(file);
+    console.log(url);
+    video.src = url;
+    video.load();
+    video.onloadeddata = function() {
+        video.play();
+    }
+    let response = fetch("{% url 'predict1'%}",{
+            method: "post",
+            body: file,
+            headers: {
+              "X-CSRFToken": csrfToken
+            }
+})
+}
+
+//
+setTimeout("autostop()", 4000);
+function autostop() {
+  div.style.display="none";
+}
+</script>
+  </body>
+</html>

@@ -6,10 +6,11 @@ on the activity thus performed. For now, it can classify only upto 6 classes: Wa
 This project is created for the selection of ALpha AI data science internship.
 
 
-## Screenshots
+## Screenshots/ Video
 
 
 ## Tech/framework used
+- Ubuntu 20.0 (Application run in)
 <b> For Training Model </b>
 - [Jupyter Notebook](https://jupyter.org/install)
 - [Keras/Tensorflow](https://keras.io/)
@@ -21,7 +22,7 @@ This project is created for the selection of ALpha AI data science internship.
 
 
 ## How it works?
-- First the video is uploaded as input. Since, it is also compilation of different forms of images.So, the video is segmented into different frames of images. Each video frame image is appeded separately in each list. It is also made sure that each video though having variable lenght are having the same numbers of frame of images. This is done because we have to make consistency for training purpose. 
+- First the video is uploaded as input. Since, it is also compilation of different forms of images.So, the video is segmented into different frames of images.       Each video frame image is appeded separately in each list. It is also made sure that each video though having variable lenght are having the same numbers of      frame of images. This is done because we have to make consistency for training purpose. 
  
 -For instance, I have taken Data sets which has 6 labels and 48 videos.Using this data sets I made equal 40 sets of images for each 48 video.
 
@@ -31,22 +32,23 @@ This project is created for the selection of ALpha AI data science internship.
 
 
 ## Requirements
-All the necessary installation to be made are inlisted in [Requirement.txt](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/requirements.txt)
+-All the necessary installation to be made are inlisted in [Requirement.txt](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/requirements.txt)
 
 ## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
+If you need to install locally on the computer you may run the test.ipnb . But make sure you fulfill the requirements. 
 
 ## API Reference
 Developed a django web application for predicting the activity performed by the video. Before running the website makesure that you have seen the video as mentioned here It can be found in :https://human-activity.herokuapp.com/
-PS: There is a small bug in web. Since i have used heroku app to deploy my website. So, it is quite slow in predicting the model. After you upload your video on website wait for atleast 20 to 30 seconds and then click the predict button. Otherwise, your  prediction will show previous video's prediction.
+
+-PS: There is a small bug in web. Since i have used heroku app to deploy my website. So, it is quite slow in predicting the model. After you upload your video on website wait for atleast 20 to 30 seconds and then click the predict button. Otherwise, your  prediction will show previous video's prediction.
 
 ## Tests
-Test are shown in [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb)
+-Test are shown in [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb)
 
 ## Credits
-Datasets from:[this github repository]( https://github.com/ksuresh21/HUMAN-ACTIVITY-RECOGNITION/tree/master/DATA )
-[Research paper]:(https://www.frontiersin.org/articles/10.3389/frobt.2015.00028/full#h10)
-Other project help: stackoverflow
+-Datasets from:[this github repository]( https://github.com/ksuresh21/HUMAN-ACTIVITY-RECOGNITION/tree/master/DATA )
+-[Research paper]:(https://www.frontiersin.org/articles/10.3389/frobt.2015.00028/full#h10)
+-Other project help: stackoverflow
 
 ## License
 MIT © [Aayushma Pant](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/LICENSE)

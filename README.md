@@ -6,8 +6,8 @@ on the activity thus performed. For now, it can classify only upto 6 classes: Wa
 This project is created for the selection of ALpha AI data science internship.
 
 
-## Screenshots/ Video
-
+## Video Demo
+Check the demo video : https://youtu.be/8oalsSVb4eA
 
 ## Tech/framework used
 - Ubuntu 20.0 (Application run in)
@@ -38,7 +38,7 @@ This project is created for the selection of ALpha AI data science internship.
 If you need to install locally on the computer you may run the [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb). But make sure you fulfill the requirements. 
 
 ## API Reference
-Developed a django web application for predicting the activity performed by the video. Before running the website makesure that you have seen the video as mentioned here It can be found in :https://human-activity.herokuapp.com/
+Developed a django web application for predicting the activity performed by the video. Before running the website makesure that you have seen the video as mentioned here: [Demo Link](https://youtu.be/8oalsSVb4eA) It can be found in :[Website link](https://human-activity.herokuapp.com/)
 
 -PS: There is a small bug in web. Since i have used heroku app to deploy my website. So, it is quite slow in predicting the model. After you upload your video on website wait for atleast 20 to 30 seconds and then click the predict button. Otherwise, your  prediction will show previous video's prediction.
 

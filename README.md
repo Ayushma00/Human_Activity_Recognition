@@ -35,7 +35,7 @@ This project is created for the selection of ALpha AI data science internship.
 -All the necessary installation to be made are inlisted in [Requirement.txt](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/requirements.txt)
 
 ## Installation
-If you need to install locally on the computer you may run the test.ipnb . But make sure you fulfill the requirements. 
+If you need to install locally on the computer you may run the [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb). But make sure you fulfill the requirements. 
 
 ## API Reference
 Developed a django web application for predicting the activity performed by the video. Before running the website makesure that you have seen the video as mentioned here It can be found in :https://human-activity.herokuapp.com/

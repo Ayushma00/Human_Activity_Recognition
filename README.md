@@ -18,8 +18,11 @@ This project is created for the selection of ALpha AI data science internship.
 - [Atom](https://atom.io/)
 - [Django](https://www.djangoproject.com/)
 
-## Features
-What makes your project stand out?
+## How it works?
+First the video is uploaded as input. Since, it is also compilation of different forms of images.So, the video is segmented into different frames of images. Each video frame image is appeded separately in each list. It is also made sure that each video though having variable lenght are having the same numbers of frame of images. This is done because we have to make consistency for training purpose. Fo instance, I have taken Data sets from https://github.com/ksuresh21/HUMAN-ACTIVITY-RECOGNITION/tree/master/DATA , using this data sets I made equal 40 sets of images for each 48 video.
+CNN-LSTM Architecture: Then the model is passed to CNN -LSTM model for better accuracy. For now got 67% accuracy in validation sets. If the datas are added more, we will soon reach to maximum accuracy.  It can be seen in [video_imagefram converter.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/video_imageframe%20converter.ipynb)
+To test the model prediction: [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb) file can be seen.
+
 
 ## Code Example
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.

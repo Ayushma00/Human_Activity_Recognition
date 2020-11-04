@@ -1,29 +1,22 @@
 # Human Activity Recognition
 It is an AI based project that can identify and recognize human activity from a video source and classify it based
-on the activity thus performed. For now, it can classify only upto 6 classes: Walking, Standing, Talking to Phone, Squatting, Yoga , Waving Hands, 
+on the activity thus performed. For now, it can classify only upto 6 classes: Walking, Standing, Talking to Phone, Squatting, Yoga , Waving Hands.
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project is created for the selection of ALpha AI data science internship.
 
-## Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. - 
 
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
- 
 ## Screenshots
-Include logo/demo screenshot etc.
+
 
 ## Tech/framework used
-Ex. -
+<b> For Training Model </b>
+- [Jupyter Notebook](https://jupyter.org/install)
+- [Keras/Tensorflow](https://keras.io/)
 
-<b>Built with</b>
-- [Electron](https://electron.atom.io)
+<b> For web developyment Built with </b>
+- [Atom](https://atom.io/)
+- [Django](https://www.djangoproject.com/)
 
 ## Features
 What makes your project stand out?

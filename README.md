@@ -2,8 +2,6 @@
 It is an AI based project that can identify and recognize human activity from a video source and classify it based
 on the activity thus performed. For now, it can classify only upto 6 classes: Walking, Standing, Talking to Phone, Squatting, Yoga , Waving Hands.
 
-## Motivation
-This project is created for the selection of ALpha AI data science internship.
 
 
 ## Video Demo

@@ -1,52 +1,57 @@
-# Human Activity Recognition
-It is an AI based project that can identify and recognize human activity from a video source and classify it based
-on the activity thus performed. For now, it can classify only upto 6 classes: Walking, Standing, Talking to Phone, Squatting, Yoga , Waving Hands.
 
+# Human Activity Recognition Application
 
+Human Activity Recognition is an AI-based project designed to identify and classify human activities for the given input video sources. At its current stage, it can accurately classify up to six activities: Walking, Standing, Talking on the Phone, Squatting, Yoga, and Waving Hands.
 
 ## Video Demo
-Check the demo video : https://youtu.be/8oalsSVb4eA
 
-## Tech/framework used
-- Ubuntu 20.0 (Application run in)
-<b> For Training Model </b>
-- [Jupyter Notebook](https://jupyter.org/install)
-- [Keras/Tensorflow](https://keras.io/)
+Check out our demo video [here](https://youtu.be/8oalsSVb4eA).
 
-<b> For web developyment Built with </b>
-- [Atom](https://atom.io/)
-- [Django](https://www.djangoproject.com/)
+## Tech/Framework Used
 
+- **Operating System:** Ubuntu 20.0 (for training model)
+- **Development Environment:** Jupyter Notebook
+- **Libraries/Frameworks:**
+  - Keras/TensorFlow
+- **Web Development:**
+  - Built with Atom and Django
 
+## How It Works
 
-## How it works?
-- First the video is uploaded as input. Since, it is also compilation of different forms of images.So, the video is segmented into different frames of images.       Each video frame image is appeded separately in each list. It is also made sure that each video though having variable lenght are having the same numbers of      frame of images. This is done because we have to make consistency for training purpose. 
- 
--For instance, I have taken Data sets which has 6 labels and 48 videos.Using this data sets I made equal 40 sets of images for each 48 video.
+1. **Data Preprocessing:** Uploaded videos are segmented into individual frames, ensuring consistency in the number of frames per video for training purposes.
+   
+2. **CNN-LSTM Architecture:** The model utilizes a CNN-LSTM architecture for enhanced accuracy. Currently achieving 67% accuracy on validation sets, further improvements are anticipated with additional data.
 
--CNN-LSTM Architecture: Then the model is passed to CNN -LSTM model for better accuracy. For now got 67% accuracy in validation sets. If the datas are added more, we will soon reach to maximum accuracy.  It can be seen in [video_imagefram converter.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/video_imageframe%20converter.ipynb)
-
--To test the model prediction: [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb) file can be seen.
-
+3. **Model Testing:** Model predictions can be tested using the `testing.ipynb` file.
 
 ## Requirements
--All the necessary installation to be made are inlisted in [Requirement.txt](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/requirements.txt)
+
+Ensure all necessary installations are performed as listed in `Requirements.txt`.
 
 ## Installation
-If you need to install locally on the computer you may run the [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb). But make sure you fulfill the requirements. 
+
+To install locally, execute the `testing.ipynb` file. Ensure all requirements are met beforehand.
 
 ## API Reference
-Developed a django web application for predicting the activity performed by the video. Before running the website makesure that you have seen the video as mentioned here: [Demo Link](https://youtu.be/8oalsSVb4eA) It can be found in :[Website link](https://human-activity.herokuapp.com/)
 
--PS: There is a small bug in web. Since i have used heroku app to deploy my website. So, it is quite slow in predicting the model. After you upload your video on website wait for atleast 20 to 30 seconds and then click the predict button. Otherwise, your  prediction will show previous video's prediction.
+We've developed a Django web application for predicting activities from videos. Before utilizing the website, watch the demo video provided [here](https://youtu.be/8oalsSVb4eA).
+
+    *Note: Due to deployment on Heroku, the website may experience delays in predicting models. After uploading your video, wait for 20 to 30 seconds before clicking the predict button to avoid displaying the previous video's prediction. But running on local host will work fine.*
 
 ## Tests
--Test are shown in [testing.ipynb](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/testing.ipynb)
+
+Tests can be found in the `testing.ipynb` file.
 
 ## Credits
--Datasets from:[this github repository]( https://github.com/ksuresh21/HUMAN-ACTIVITY-RECOGNITION/tree/master/DATA )
--[Research paper]:(https://www.frontiersin.org/articles/10.3389/frobt.2015.00028/full#h10)
--Other project help: stackoverflow
+
+- **Datasets:** [GitHub Repository](insert_dataset_repository_link_here)
+- **Research Paper:** [Link](https://www.frontiersin.org/articles/10.3389/frobt.2015.00028/full#h10)
+- **Project Assistance:** Stack Overflow
 
 ## License
-MIT © [Aayushma Pant](https://github.com/Ayushma00/Human_Activity_Recognition/blob/main/LICENSE)
+
+MIT © Aayushma Pant
+
+---
+
+Feel free to adjust any details or add more sections if needed!

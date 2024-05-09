@@ -52,6 +52,4 @@ Tests can be found in the `testing.ipynb` file.
 
 MIT © Aayushma Pant
 
----
 
-Feel free to adjust any details or add more sections if needed!

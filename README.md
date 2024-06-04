@@ -42,11 +42,7 @@ We've developed a Django web application for predicting activities from videos. 
 
 Tests can be found in the `testing.ipynb` file.
 
-## Credits
 
-- **Datasets:** [GitHub Repository](insert_dataset_repository_link_here)
-- **Research Paper:** [Link](https://www.frontiersin.org/articles/10.3389/frobt.2015.00028/full#h10)
-- **Project Assistance:** Stack Overflow
 
 ## License
 
